@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <solid android:color="@android:color/transparent" />
+    <!--64001D  -->
+    <stroke
+        android:width="1dip"
+        android:color="@color/black" />
+    
+    
+    
+
+</shape>
+<!-- From: file:/C:/Users/bcarter/AndroidStudioProjects/cysmart/app/src/main/res/drawable/rec_broder.xml -->

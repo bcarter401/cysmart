@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="@string/datalogger_history"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/main_bg_color"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/ListView_gatt_services"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_margin="5dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="3dp"
+        android:padding="5dp" >
+    </ListView>
+
+</RelativeLayout><!-- From: file:/C:/Users/bcarter/AndroidStudioProjects/cysmart/app/src/main/res/layout/datalogger_list.xml -->

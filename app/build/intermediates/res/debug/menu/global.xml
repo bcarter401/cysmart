@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+	      android:id="@+id/share"
+	      android:icon="@drawable/share"
+	      android:showAsAction="always"
+	      android:title="@string/share"/>
+	     <!--  android:actionProviderClass="android.widget.ShareActionProvider" -->
+	     
+     <item
+	      android:id="@+id/log"
+	      android:icon="@drawable/document_icon"
+	      android:showAsAction="always"
+	      android:title="@string/log"/>
+      <item
+	      android:id="@+id/graph"
+	      android:icon="@drawable/graph"
+	      android:showAsAction="always"
+	      android:title="@string/graph"/>
+
+</menu>
+<!-- From: file:/C:/Users/bcarter/AndroidStudioProjects/cysmart/app/src/main/res/menu/global.xml -->

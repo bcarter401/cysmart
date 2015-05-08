@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Application elements -->
+    <string name="app_name">CySmart</string>
+    <string name="action_settings">Settings</string>
+    <string name="update">Update</string>
+    <string name="loading">Loading</string>
+
+    <!-- Navigation drawer elements -->
+    <string name="title_devices">BLE Devices</string>
+    <string name="title_products">Cypress BLE Products</string>
+    <string name="title_contact">Contact Us</string>
+    <string name="title_about">About</string>
+
+    <string-array name="nav_drawer_items">
+        <item>BLE Devices</item>
+        <item>Cypress BLE Products</item>
+        <item>Contact Us</item>
+        <item>About</item>
+    </string-array>
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/services</item>
+        <item>@drawable/cypress</item>
+        <item>@drawable/contact</item>
+        <item>@drawable/settings</item>
+        <item>@drawable/about</item>
+    </array>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- Image descriptors -->
+    <string name="image_navigation_icon">Navigation icon</string>
+    <string name="image_splash_logo">Splash logo</string>
+    <string name="image_navigation_drawer_logo">navigation logo</string>
+    <string name="image_hrm_measurement_heart">heart rate monitor heart icon</string>
+    <string name="image_hrm_ee_icon">heart rate monitor energy icon</string>
+    <string name="image_hrm_rr_icon">heart rate monitor rr icon</string>
+    <string name="image_health_temp_measurement_heart">health temperature thermometer icon</string>
+    <string name="image_battery_service_level">battery level icon</string>
+    <string name="image_bluetooth_logo">bluetooth logo</string>
+    <string name="image_transmission_background_circle_logo">transmission blue circle</string>
+    <string name="image_transmission_foreground_circle_logo">transmission white circle</string>
+    <string name="glucose_icon">glucose icon</string>
+    <string name="capsense_button_item">capsense button icon</string>
+    <string name="image_actionbar_bg_color">background color</string>
+    <string name="image_about_cypress_logo">cypress logo</string>
+    <string name="image_blood_pressure">Blood pressure image</string>
+    <string name="image_sensor_hub_graph">Sensor hub graph image</string>
+    <string name="image_sensor_hub_more">Sensor hub more image</string>
+    <string name="image_sensor_hub_accelerometer">Sensor hub accelerometer image</string>
+    <string name="image_sensor_hub_accelerometer_cube">Sensor hub accelerometer cube image</string>
+    <string name="image_sensor_hub_temperature">Sensor hub temperature image</string>
+    <string name="image_sensor_hub_battery">Sensor hub battery image</string>
+    <string name="image_sensor_hub_pressure">Sensor hub pressure image</string>
+
+    <!-- Alert dialog elements -->
+    <string name="alert_message_exit">Do you want to exit the application?</string>
+    <string name="alert_message_exit_ok">Ok</string>
+    <string name="alert_message_exit_cancel">Cancel</string>
+    <string name="alert_message_connect">Connecting to the device</string>
+    <string name="alert_message_connect_title">Device Connection</string>
+    <string name="alert_message_reconnect">Your connection has been lost.\nDo you want to reconnect?</string>
+    <string name="alert_message_wait">Please wait..</string>
+    <string name="alert_message_no_internet">No internet connection</string>
+
+    <!-- Device discovery elements -->
+    <string name="device_unknown">Unknown device</string>
+    <string name="device_ble_not_supported">Bluetooth Low Energy not supported on device</string>
+    <string name="device_bluetooth_on">Bluetooth turned on successfully</string>
+    <string name="device_bluetooth_not_supported">Bluetooth not supported on device</string>
+    <string name="device_signal_strength">RSSI</string>
+    <string name="device_signal_strength_unit">dBm</string>
+
+    <!-- profile control elements -->
+    <string name="profile_control_device_name">Device Name :</string>
+    <string name="profile_control_device_address">Device Address :</string>
+    <string name="profile_control_device_connection_state">Connection Status :</string>
+    <string name="profile_control_device_connected_state">Connected</string>
+    <string name="profile_control_device_disconnected_state">Disconnected</string>
+    <string name="profile_control_unknown_service">Unknown Service</string>
+    <string name="profile_control_device_disconnected_message">Device disconnected\nReconnect Device</string>
+    <string name="profile_control_no_device_message">Pulldown to refresh...</string>
+    <string name="profile_control_pull_down_message">Please pull down to refresh</string>
+    <string name="profile_control_delay_message">Cannot connect to the device</string>
+    <string name="feature_not_implemented">Feature will be implemented</string>
+
+    <!-- HRM profile elements -->
+    <string name="hrm_data_unit">BPM</string>
+    <string name="hrm_sensor_location">Sensor Location:</string>
+    <string name="hrm_ee_unit">Kcal</string>
+    <string name="hrm_ee_text">Energy Expanded</string>
+    <string name="hrm_rr_unit">S</string>
+    <string name="hrm_rr_unit_text">RR-Interval</string>
+
+    <!-- Thermometer profile elements -->
+    <string name="health_temperature_unit">°F</string>
+    <string name="health_temperature">Temperature</string>
+    <string name="health_temperature_time">Time</string>
+
+    <!-- Glucose profile elements -->
+    <string name="glucose_unit_molL">mol/L</string>
+    <string name="glucose_unit_kgL">kg/L</string>
+    <string name="glucose_time">Recording Time :</string>
+    <string name="glucose_type">Type :</string>
+    <string name="glucose_sample_location">Sample Location :</string>
+
+    <!-- About Fragment elements -->
+    <string name="cysmart_version">CySmart 1.0.0.9</string>
+    <string name="cysmart_copyright">Copyright © 2014</string>
+    <string name="cypress_semiconductors">Cypress Semiconductor</string>
+
+    <!-- Contact Fragment elements -->
+    <string name="cypress_semiconductors_address">Address:\nCypress Semiconductor Inc.\n198 Champion Court\nSan Jose, CA - 95134\nUSA</string>
+    <string name="cypress_semiconductors_phone">Customer Support: 1-408-943-2600\nE-Mail: customercare@cypress.com</string>
+
+    <!-- Device information profile elements -->
+    <string name="div_manufacturer_name">Manufacturer Name </string>
+    <string name="div_model_name">Model Number </string>
+    <string name="div_serial_name">Serial Number </string>
+    <string name="div_hardware_name">Hardware Revision </string>
+    <string name="div_software_name">Software Revision </string>
+    <string name="div_system_name">System ID </string>
+    <string name="div_regulatory_name">Regulatory Certification Data List </string>
+    <string name="div_pnp_name">PnP ID </string>
+
+    <!-- Gatt DB elements -->
+    <string name="gatt_services_heading">Services</string>
+    <string name="gatt_services_read">Read</string>
+    <string name="gatt_services_write">Write</string>
+    <string name="gatt_services_notify">Notify</string>
+    <string name="gatt_services_indicate">Indicate</string>
+    <string name="gatt_services_details">Details</string>
+    <string name="gatt_services">Service</string>
+    <string name="gatt_charateristic">Characteristic</string>
+    <string name="gatt_services_ascii">ASCII</string>
+    <string name="gatt_services_hex">HEX</string>
+    <string name="gatt_services_date">Date</string>
+    <string name="gatt_services_time">Time</string>
+    <string name="gatt_services_stop">Stop</string>
+    <string name="gatt_details_popup_ok">Ok</string>
+    <string name="gatt_details_popup_cancel">Cancel</string>
+    <string name="gatt_details_popup_heading">Enter Hex values</string>
+
+    <!-- DataLogger elements -->
+    <string name="data_logger_no_log">No Logs Found</string>
+    <string name="data_logger_directory">CySmart</string>
+    <string name="data_logger_device_connected">Device connected </string>
+    <string name="data_logger_device_disconnected">Device disconnected </string>
+    <string name="data_logger_selected_characteristic_uuid">Selected characteristic UUID</string>
+    <string name="data_logger_selected_service_uuid">Selected Service UUID </string>
+    <string name="data_logger_characteristic_read_start">Start Characteristic read </string>
+    <string name="data_logger_characteristic_notify_start">Start Characteristic notify </string>
+    <string name="data_logger_characteristic_read_stop">Stop Characteristic read </string>
+    <string name="data_logger_characteristic_notify_stop">Stop Characteristic notify </string>
+    <string name="data_logger_characteristic_ascii_value">Characteristic ASCII value </string>
+    <string name="data_logger_characteristic_hex_value">Characteristic HEX value </string>
+    <string name="data_logger_characteristic_btl_value">Battery level value received </string>
+    <string name="data_logger_characteristic_sys_value">Systolic pressure value received </string>
+    <string name="data_logger_characteristic_dia_value">Diastolic pressure value received </string>
+    <string name="data_logger_characteristic_capsense_proximity">Capsense Proximity value received </string>
+    <string name="data_logger_characteristic_capsense_slider">Capsense Slider value received </string>
+    <string name="data_logger_characteristic_capsense_buttons">Capsense Button value received </string>
+    <string name="data_logger_characteristic_cycling_speed_cadence">Cycling speed and cadence value received </string>
+    <string name="data_logger_characteristic_running_speed_cadence">Running speed and cadence value received </string>
+    <string name="data_logger_characteristic_system_id">System id value received </string>
+    <string name="data_logger_characteristic_pnp_id">PNP id value received </string>
+    <string name="data_logger_characteristic_software_number">Software number value received </string>
+    <string name="data_logger_characteristic_hardware_number">Hardware number value received </string>
+    <string name="data_logger_characteristic_serial_number">Serial value received </string>
+    <string name="data_logger_characteristic_model_number">Model number value received </string>
+    <string name="data_logger_characteristic_manufacture_name">Manufacture name value received </string>
+    <string name="data_logger_characteristic_glucose_concentration">Glucose concentration value received </string>
+    <string name="data_logger_characteristic_glucose_type">Glucose type value received </string>
+    <string name="data_logger_characteristic_glucose_recording_time">Glucose recording time value received </string>
+    <string name="data_logger_characteristic_health_temperature_sensor_location">Health temperature sensor location value received </string>
+    <string name="data_logger_characteristic_health_temperature_value">Health temperature  value received </string>
+    <string name="data_logger_characteristic_heart_rate_value">Heart value received </string>
+    <string name="data_logger_characteristic_heart_rate_sensor_value">Heart sensor location received </string>
+    <string name="data_logger_characteristic_heart_rate_energy_expended">Heart rate energy expended received </string>
+    <string name="data_logger_characteristic_heart_rate_rr_value">Heart rate RR interval value received</string>
+    <string name="data_logger_characteristic_rgb_write">Writing RGB Value</string>
+
+    <!-- Capsense elements -->
+    <string name="proximity">Proximity</string>
+    <string name="slider">Slider</string>
+    <string name="buttons">Buttons</string>
+
+    <!-- ActionBar fragment Names -->
+    <string name="profile_control_fragment">Services</string>
+    <string name="capsense">CapSense</string>
+    <string name="health_thermometer_fragment">Health Thermometer</string>
+    <string name="graph">Graph</string>
+    <string name="log">Log</string>
+    <string name="share">Share</string>
+    <string name="heart_rate">Heart Rate Measurement</string>
+    <string name="rgb_led">RGB LED</string>
+    <string name="device_info">Device Information</string>
+    <string name="gatt_db">Gatt DB</string>
+    <string name="data_logger">Data Logger</string>
+    <string name="glucose_fragment">Glucose</string>
+    <string name="gatt_characteristics_heading">Characteristics</string>
+    <string name="gatt_details_heading">Details</string>
+    <string name="profile_scan_fragment">BLE Devices</string>
+    <string name="battery_info_fragment">Battery Information</string>
+    <string name="bloodpressure_fragment">Blood Pressure</string>
+    <string name="findme_fragment">Find Me</string>
+    <string name="rsc_fragment">Running Speed and Cadence</string>
+    <string name="csc_fragment">Cycling Speed and Cadence</string>
+    <string name="datalogger_history">Data Logger History</string>
+
+    <!-- Find Me profile elements -->
+    <string name="find_linkloss">Link Loss</string>
+    <string name="find_immediate_alert">Immediate Alert</string>
+    <string name="find_transmission_power">Transmission Power</string>
+
+    <!-- Blood pressure profile elements -->
+    <string name="blood_pressure">Blood Pressure</string>
+    <string name="blood_pressure_systolic">SYS</string>
+    <string name="blood_pressure_diastolic">DIA</string>
+    <string name="blood_pressure_start_btn">START</string>
+    <string name="blood_pressure_stop_btn">STOP</string>
+    <string name="blood_pressure_mmHg">mmHg</string>
+    <string name="blood_pressure_kPa"> kPa</string>
+
+    <!-- RSC profile elements -->
+    <string name="rsc_weight">Weight:</string>
+    <string name="rsc_weight_unit">kg</string>
+    <string name="rsc_time">Time:</string>
+    <string name="rsc_calories">Calories burnt</string>
+    <string name="rsc_avg_speed">Avg Speed</string>
+    <string name="rsc_calories_unit">Kcal</string>
+    <string name="rsc_avg_speed_unit">Km/h</string>
+    <string name="rsc_time_counter">00:00:09</string>
+    <string name="rsc_distance_unit">km</string>
+
+    <!-- CSC profile elements -->
+    <string name="csc_weight">Weight:</string>
+    <string name="csc_weight_unit">kg</string>
+    <string name="csc_time">Time:</string>
+    <string name="csc_calories">Calories burnt</string>
+    <string name="csc_cadence">Cadence</string>
+    <string name="csc_calories_unit">Kcal</string>
+    <string name="csc_cadence_unit">rpm</string>
+    <string name="csc_time_counter">00:00:09</string>
+    <string name="csc_distance_unit">km</string>
+
+    <!-- Sensorhub profile elements -->
+    <string name="sen_hub">Sensor Hub</string>
+    <string name="sen_hub_locate">Locate Device</string>
+    <string name="sen_hub_locate_stop">Stop Alert</string>
+    <string name="sen_hub_accelerometer">Accelerometer</string>
+    <string name="sen_hub_accelerometer_x">X: </string>
+    <string name="sen_hub_accelerometer_Y">Y: </string>
+    <string name="sen_hub_accelerometer_Z">Z: </string>
+    <string name="sen_hub_temperature">Temperature</string>
+    <string name="sen_hub_temperature_unit">°C</string>
+    <string name="sen_hub_battery">Battery Level</string>
+    <string name="sen_hub_battery_unit">%</string>
+    <string name="sen_hub_pressure">Pressure</string>
+    <string name="sen_hub_pressure_unit">Kpa</string>
+    <string name="sen_hub_sensor_scan_interval">Sensor Scan Interval</string>
+    <string name="sen_hub_sensor_type">Sensor Type</string>
+    <string name="sen_hub_threshold">Threshold</string>
+
+    <string-array name="findme_immediate_alert_array">
+        <item>No Alert</item>
+        <item>Mid Alert</item>
+        <item>High Alert</item>
+    </string-array>
+    <string-array name="filter_configuration_alert_array">
+        <item>Select Filter Configuration</item>
+        <item>None</item>
+        <item>Average</item>
+        <item>Medium</item>
+        <item>Custom</item>
+    </string-array>
+
+    <string name="send_to">Send to..</string>
+
+
+    <!-- LTX-Credence strings -->
+    <string name="select_chan">Enter Site (1-4):</string>
+    <string name="chan">Channel</string>
+    <string name="self_test">Self Test</string>
+    <string name="logo">LTXC Logo</string>
+    <string name="dut_acceleration">Acc(G)</string>
+    <string name="dut_voltage">V</string>
+    <string name="name_app">PSOCRATES</string>
+    <string name="xAxis">X-Axis</string>
+    <string name="yAxis">Y-Axis</string>
+    <string name="zAxis">Z-Axis</string>
+    <string name="dutVcc">DUT Volt(VCC):</string>
+
+</resources>

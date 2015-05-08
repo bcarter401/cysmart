@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:id="@+id/parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/graph_htm_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <RelativeLayout
+                android:id="@+id/graph_htm_parent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:minHeight="300dp" >
+
+                <LinearLayout
+                    android:id="@+id/graph_htm"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="center"
+                    android:layout_toEndOf="@+id/verticaltv"
+                    android:minHeight="300dp" />
+
+                <com.cypress.cysmart.utils.VerticalTextView
+                    android:id="@+id/verticaltv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:minWidth="20dp"
+                    android:padding="4dp"
+                    android:text="@string/health_temperature"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/health_temperature_time"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/thermometer_icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:contentDescription="@string/image_health_temp_measurement_heart"
+            android:src="@drawable/themometer" />
+
+        <LinearLayout
+            android:id="@+id/lin0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/temp_measure"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:ellipsize="marquee"
+                android:gravity="center"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/main_bg_color"
+                android:textSize="@dimen/hrm_measurement_heart_rate_textsize"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/temp_unit"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center_vertical|start"
+                android:text="@string/health_temperature_unit"
+                android:textColor="@color/main_bg_color"
+                android:textSize="@dimen/hrm_measurement_heart_rate_textsize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/hrm_sensor_title"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="@string/hrm_sensor_location"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/main_bg_color"
+                android:textSize="@dimen/hrm_measurement_body_sensor_textsize" />
+
+            <TextView
+                android:id="@+id/hsl_sensor_data"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ellipsize="marquee"
+                android:focusable="false"
+                android:gravity="center"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:padding="10dp"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:textColor="@color/main_bg_color"
+                android:textSize="@dimen/hrm_measurement_body_sensor_textsize"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView><!-- From: file:/C:/Users/bcarter/AndroidStudioProjects/cysmart/app/src/main/res/layout/health_temp_measurement.xml -->

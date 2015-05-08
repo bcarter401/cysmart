@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:layout_gravity="center"
+    android:background="@color/white" >
+
+    <Button
+        android:id="@+id/battery_level_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="@drawable/curved_button"
+        android:padding="@dimen/blood_glucose_padding"
+        android:paddingEnd="50dp"
+        android:paddingStart="50dp"
+        android:text="@string/update"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/textsize_very_small" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutParent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/battery_blank"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/battery_icon"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="25dp"
+            android:layout_weight="100"
+            android:contentDescription="@string/image_battery_service_level"
+            android:gravity="center"
+            android:paddingBottom="15dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="35dp"
+            android:src="@color/white" />
+
+        <ImageView
+            android:id="@+id/battery_indication"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0"
+            android:contentDescription="@string/image_battery_service_level"
+            android:gravity="center"
+            android:padding="15dp"
+            android:src="@color/main_bg_color" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/battery_level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="@+id/linearLayoutParent"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/linearLayoutParent"
+        android:background="@drawable/batter_result"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/hrm_measurement_heart_rate_textsize"
+        android:textStyle="bold" />
+
+</RelativeLayout>

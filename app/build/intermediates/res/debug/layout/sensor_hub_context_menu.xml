@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sen_hub_extra_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/service_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="@dimen/sensor_hub_padding"
+        android:textColor="@color/main_bg_color"
+        android:textSize="@dimen/textsize_very_small"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/sensor_hub_padding"
+        android:text="@string/sen_hub_sensor_scan_interval"
+        android:textColor="@color/main_bg_color"
+        android:textSize="@dimen/textsize_very_small"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/sensor_scan_interval"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:padding="@dimen/sensor_hub_padding" >
+    </EditText>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/sensor_hub_padding"
+        android:text="@string/sen_hub_sensor_type"
+        android:textColor="@color/main_bg_color"
+        android:textSize="@dimen/textsize_very_small"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/sensor_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/sensor_hub_padding"
+        android:textColor="@color/main_bg_color" />
+
+    <Spinner
+        android:id="@+id/filter_configuration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/sensor_hub_padding" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/sensor_hub_padding"
+        android:text="@string/sen_hub_threshold"
+        android:textColor="@color/main_bg_color"
+        android:textSize="@dimen/textsize_very_small"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/threshold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:padding="@dimen/sensor_hub_padding" >
+    </EditText>
+
+</LinearLayout><!-- From: file:/C:/Users/bcarter/AndroidStudioProjects/cysmart/app/src/main/res/layout/sensor_hub_context_menu.xml -->

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="HEART_RATE_SERVICE">Heart Rate Service</string>
+    <string name="HEALTH_THERMO_SERVICE">Health Thermometer Service</string>
+    <string name="GENERIC_ACCESS_SERVICE">Generic Access Service</string>
+    <string name="GENERIC_ATTRIBUTE_SERVICE">Generic Attribute Service</string>
+    <string name="DEVICE_INFORMATION_SERVICE">Device Information Service</string>
+    
+    <string name="BATTERY_SERVICE">Battery Service</string>
+    <string name="IMMEDIATE_ALERT_SERVICE">Immediate Alert</string>
+    <string name="LINK_LOSS_SERVICE">Link Loss</string>
+    <string name="TRANSMISSION_POWER_SERVICE">Tx Power</string>
+    <string name="CAPSENSE_SERVICE">CapSense Service</string>
+    
+    <string name="RGB_LED_SERVICE">RGB LED Service</string>
+    <string name="GLUCOSE_SERVICE">Glucose Service</string>
+    <string name="BLOOD_PRESSURE_SERVICE">Blood Pressure Service</string>
+    <string name="RSC_SERVICE">Running Speed and Cadence Service</string>
+    <string name="BAROMETER_SERVICE">Barometer Service</string>
+    
+    <string name="ACCELEROMETER_SERVICE">Accelerometer Service</string>
+    <string name="ANALOG_TEMPERATURE_SERVICE">Analog Temperature Service</string>
+    <string name="CSC_SERVICE">Cycling Speed and Cadence Service</string>
+
+</resources>

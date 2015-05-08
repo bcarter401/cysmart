@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ltx_credence">
+
+    <LinearLayout
+        android:id="@+id/parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ltx_credence"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageViewlogo"
+            android:layout_width="wrap_content"
+            android:layout_height="210dp"
+            android:contentDescription="@string/logo"
+            android:paddingBottom="20dp"
+            android:src="@drawable/ltxclogoconvert" />
+
+        <LinearLayout
+            android:id="@+id/graph_rsc_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:id="@+id/graph_relative_rsc_parent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:minHeight="300dp">
+
+                <LinearLayout
+                    android:id="@+id/graph_rsc"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="center"
+                    android:layout_toEndOf="@+id/verticaltv"
+                    android:minHeight="300dp"
+                    android:orientation="horizontal" />
+
+                <com.cypress.cysmart.utils.VerticalTextView
+                    android:id="@+id/verticaltv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:minWidth="20dp"
+                    android:padding="4dp"
+                    android:text="@string/rsc_avg_speed"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/health_temperature_time"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/weight_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="0dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/weight_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:maxLines="1"
+                android:paddingStart="60dp"
+                android:paddingEnd="0dp"
+                android:text="@string/select_chan"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_medium" />
+
+            <EditText
+                android:id="@+id/weight_data"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:padding="0dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_medium"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/weight_unit"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingEnd="30dp"
+                android:paddingStart="0dp"
+                android:text="@string/chan"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_medium" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/lining"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/actionbar_bg_color" />
+
+        <TextView
+            android:id="@+id/self_test"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/self_test"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_medium"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/start_stop_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/curved_button"
+            android:paddingEnd="50dp"
+            android:paddingStart="50dp"
+            android:text="@string/blood_pressure_start_btn"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textsize_very_small"></Button>
+
+        <RelativeLayout
+            android:id="@+id/scroll_rsc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/ltx_credence"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/lining2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_alignParentTop="true"
+                android:background="@color/actionbar_bg_color" />
+
+            <LinearLayout
+                android:id="@+id/running_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="25dp"
+                android:gravity="center|center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/distance_unit2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="80dp"
+                    android:paddingStart="80dp"
+                    android:text="@string/dutVcc"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textsize_medium" />
+
+                <TextView
+                    android:id="@+id/dut_voltage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:gravity="center"
+
+                    android:textColor="@color/main_bg_color"
+                    android:textSize="@dimen/textsize_medium"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/distance_unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:paddingEnd="160dp"
+                    android:text="@string/dut_voltage"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textsize_medium" />
+            </LinearLayout>
+
+            <!--           <LinearLayout
+                           android:id="@+id/cadence_calorie_layout"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:orientation="horizontal">
+           -->
+            <TextView
+                android:id="@+id/lining3"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/running_layout"
+                android:background="@color/actionbar_bg_color" />
+            <!--
+                        </LinearLayout>
+            -->
+            <LinearLayout
+                android:id="@+id/cadence_calorie_layout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/running_layout"
+                android:layout_margin="25dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:contentDescription="@string/image_hrm_ee_icon"
+                        android:paddingBottom="30dp"
+                        android:src="@drawable/accelometer" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/calories_burntz"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="1.0"
+                            android:padding="10dp"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="@color/main_bg_color"
+                            android:textSize="@dimen/textsize_very_small"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="1.0"
+                            android:padding="10dp"
+                            android:text="@string/xAxis"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/textsize_very_small" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/extra_char"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="1.0"
+                            android:padding="10dp"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="@color/main_bg_color"
+                            android:textSize="@dimen/textsize_very_small"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="1.0"
+                            android:padding="10dp"
+                            android:text="@string/yAxis"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/textsize_very_small" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/calories_burnt3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="1.0"
+                            android:padding="10dp"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="@color/main_bg_color"
+                            android:textSize="@dimen/textsize_very_small"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="1.0"
+                            android:padding="10dp"
+                            android:text="@string/zAxis"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/textsize_very_small" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/rsc_calories"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/main_bg_color"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:contentDescription="@string/image_hrm_ee_icon"
+                        android:src="@drawable/qube" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/acc_x_direction"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="1.0"
+                            android:gravity="end"
+                            android:maxLines="1"
+                            android:padding="10dp"
+                            android:textColor="@color/main_bg_color"
+                            android:textSize="@dimen/textsize_very_small"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="1.0"
+                            android:gravity="start"
+                            android:padding="10dp"
+                            android:text="@string/dut_acceleration"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/textsize_very_small" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/acc_y_direction"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="1.0"
+                            android:gravity="end"
+                            android:maxLines="1"
+                            android:padding="10dp"
+                            android:textColor="@color/main_bg_color"
+                            android:textSize="@dimen/textsize_very_small"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="1.0"
+                            android:gravity="start"
+                            android:padding="10dp"
+                            android:text="@string/dut_acceleration"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/textsize_very_small" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/acc_z_direction"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="1.0"
+                            android:gravity="end"
+                            android:maxLines="1"
+                            android:padding="10dp"
+                            android:textColor="@color/main_bg_color"
+                            android:textSize="@dimen/textsize_very_small"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="1.0"
+                            android:gravity="start"
+                            android:padding="10dp"
+                            android:text="@string/dut_acceleration"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/textsize_very_small" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/rsc_avg_speed"
+                        android:textColor="@color/main_bg_color"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/time_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cadence_calorie_layout2"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/time_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:padding="10dp"
+                    android:text="@string/rsc_time"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/main_bg_color"
+                    android:textSize="@dimen/textsize_very_small" />
+
+                <Chronometer
+                    android:id="@+id/time_counter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/main_bg_color"
+                    android:textSize="@dimen/textsize_very_small" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>
